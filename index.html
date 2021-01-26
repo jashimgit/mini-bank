@@ -38,21 +38,46 @@
             <h1>Transaction Area</h1>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="deposit-content bg-slateBlue rounded mx-1 p-2">
-                        <h5>Deposite</h5>
-                        <h2>$00</h2>
+                    <div class="deposit-content bg-slateBlue rounded mx-1 p-2 text-white">
+                        <h5 class="p-0 text-left">Deposite</h5>
+                        <h2 class="text-bold">$ <span id="current-deposit">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="widthcontent bg-lightSalmon rounded mx-1 p-2">
-                        <h5>Widthdraw</h5>
-                        <h2>$00</h2>
+                    <div class="widthcontent bg-lightSalmon rounded mx-1 p-2 text-white">
+                        <h5 class="p-0 text-left">Widthdraw</h5>
+                        <h2 class="text-bold">$ <span id="widthdraw-balance">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4  ">
-                    <div class="balance-content bg-info rounded mx-1 p-2">
-                        <h5>Balance</h5>
-                        <h2>$1200</h2>
+                    <div class="balance-content bg-info rounded mx-1 p-2 text-white">
+                        <h5 class="p-0 text-left">Balance</h5>
+                        <h2 class="text-bold">$ <span id="total-balance">1000</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Deposit</h3>
+                            <input type="text" id="deposit-amount" class="form-control" placeholder="Amount to deposit">  
+                        </div>
+                        <div class="card-footer">
+                            <button id="deposite-btn" class="btn btn-success">Deposite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Widthdraw</h3>
+                            <input type="text" id="width-amount" class="form-control" placeholder="Amount to deposit">
+                            
+                        </div>
+                        <div class="card-footer">
+                            <button id="widthdraw-btn" class="btn btn-success">Widthdraw</button>
+                        </div>
                     </div>
                 </div>
             </div>
